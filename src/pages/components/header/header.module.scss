@@ -12,18 +12,9 @@
 
 .menu {
     font-size: 22px;
+    color: $whiteColor;
 
     a + a {
         margin-left: 38.9px;
     }
-}
-
-.button {
-    padding: 15px 50px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: $greenColor;
-    border: none;
-    cursor: pointer;
 }
