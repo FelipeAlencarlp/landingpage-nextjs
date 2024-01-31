@@ -1,0 +1,62 @@
+@import '../../../styles/mixins/colors.scss';
+@import '../../../styles/mixins/padding.scss';
+
+.container {
+    @include Padding;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    .textContainer {
+        h1 {
+            font-size: 61px;
+            font-weight: bold;
+            margin-bottom: 4rem;
+        }
+    
+        p {
+            font-size: 30px;
+            opacity: 0.7;
+            margin-bottom: 8rem;
+        }
+    
+        h1,
+        p {
+            width: 900px;
+            text-align: center;
+        }
+    }
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 68px;
+
+    .feature {
+        width: 509px;
+        height: 347px;
+        padding: 32px 35px;
+        background-color: $whiteColor;
+        border-radius: 5px;
+    
+        h1 {
+            padding: 18px 0px;
+            font-weight: bold;
+            font-size: 41px;
+            color: $purple2Color;
+        }
+    
+        p {
+            font-size: 22px;
+            color: $gray2Color;
+        }
+    
+        h1,
+        p {
+            width: auto;
+            text-align: left;
+        }
+    }
+}

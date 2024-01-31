@@ -1,8 +1,11 @@
 @import "../../../styles/mixins/colors.scss";
+@import '../../../styles/mixins/padding.scss';
 
 .container {
+    @include Padding; // Mixin
     color: $whiteColor;
-    padding: 34px 180px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     width: 100%;
     background-color: $purpleColor;
     border-bottom: 0.5px solid $grayColor;
