@@ -1,6 +1,7 @@
 @import "../../../styles/mixins/colors.scss";
 
 .container {
+    color: $whiteColor;
     padding: 34px 180px;
     width: 100%;
     background-color: $purpleColor;
@@ -12,7 +13,6 @@
 
 .menu {
     font-size: 22px;
-    color: $whiteColor;
 
     a + a {
         margin-left: 38.9px;
