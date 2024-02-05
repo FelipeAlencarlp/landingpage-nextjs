@@ -17,4 +17,14 @@
         background-color: $whiteColor;
         color: $purpleColor;
     }
+
+    &.full {
+        padding: 21px;
+        width: 100%;
+        font-size: 21px;
+        font-weight: 600;
+        border-radius: 8px;
+        background-color: $green3Color;
+        color: $whiteColor;
+    }
 }
