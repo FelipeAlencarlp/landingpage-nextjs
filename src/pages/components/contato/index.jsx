@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Button from '../button';
 import Input from '../input';
 import Select from '../select';
@@ -15,6 +16,7 @@ const Contato = () => {
             </div>
             <div className={Styles.form}>
                 <h1>Fale com um especialista</h1>
+
                 <form>
                     <Input type="text" placeholder="Nome completo" required />
                     <Input type="email" placeholder="E-mail profissional" required />
@@ -33,6 +35,14 @@ const Contato = () => {
 
                     <Button title="Enviar" kind="full" />
                 </form>
+            </div>
+            <div className={Styles.footer}>
+                <p>
+                    Ao enviar esse formulário, você reconhece que leu e concorda com a nossa
+                    <Link href="/">
+                        <span> Política de Privacidade.</span>
+                    </Link>
+                </p>
             </div>
         </div>
     );
