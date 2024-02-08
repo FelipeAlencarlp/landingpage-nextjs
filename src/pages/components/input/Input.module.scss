@@ -1,11 +1,12 @@
 @import '../../../styles/mixins/colors.scss';
+@import '../../../styles/mixins/fonts.scss';
 
 .input {
+    @include SizeNormal;
     padding: 22px 17px;
     background-color: $gray4Color;
     border: none;
     border-radius: 10px;
-    font-size: 19px;
     font-weight: 300;
     color: $gray5Color;
     opacity: 0.7;

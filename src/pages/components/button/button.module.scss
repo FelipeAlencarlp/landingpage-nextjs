@@ -1,9 +1,10 @@
 @import "../../../styles/mixins/colors.scss";
+@import '../../../styles/mixins/fonts.scss';
 
 .button {
+    @include SizeSmall;
     padding: 15px 50px;
     border-radius: 5px;
-    font-size: 16px;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -19,9 +20,9 @@
     }
 
     &.full {
+        @include SizeNormal;
         padding: 21px;
         width: 100%;
-        font-size: 21px;
         font-weight: 600;
         border-radius: 8px;
         background-color: $green3Color;

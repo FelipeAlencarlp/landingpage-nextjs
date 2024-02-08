@@ -1,0 +1,41 @@
+@import './responsive.scss';
+
+@mixin SizeExtra {
+    font-size: 71px;
+
+    @include Phone {
+        font-size: 35px;
+    }
+}
+
+@mixin SizeLarge {
+    font-size: 65px;
+
+    @include Phone {
+        font-size: 32px;
+    }
+}
+
+@mixin SizeMedium {
+    font-size: 41px;
+
+    @include Phone {
+        font-size: 22px;
+    }
+}
+
+@mixin SizeNormal {
+    font-size: 30px;
+
+    @include Phone {
+        font-size: 15px;
+    }
+}
+
+@mixin SizeSmall {
+    font-size: 22px;
+
+    @include Phone {
+        font-size: 11px;
+    }
+}
