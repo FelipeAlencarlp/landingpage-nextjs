@@ -19,6 +19,16 @@
         grid-template-columns: 1fr;
         grid-template-rows: max-content;
     }
+
+    @include Tablet {
+        padding-top: 4rem;
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+
+    @include Laptop {
+        padding-top: 6rem;
+    }
 }
 
 .text {

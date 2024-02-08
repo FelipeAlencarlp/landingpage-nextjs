@@ -41,6 +41,19 @@
             width: 100%;
         }
     }
+
+    @include Tablet {
+        padding-bottom: 6rem;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        h1,
+        p {
+            width: 100%;
+        }
+    }
 }
 
 .features {
@@ -55,8 +68,10 @@
 }
 
 .feature {
-    width: 509px;
-    height: 347px;
+    max-width: 509px;
+    max-height: 347px;
+    width: 100%;
+    height: 100%;
     padding: 32px 35px;
     background-color: $whiteColor;
     border-radius: 5px;
@@ -77,8 +92,6 @@
     }
 
     @include Phone {
-        width: 100%;
-        height: 100%;
         padding: 20px;
     }
 }
