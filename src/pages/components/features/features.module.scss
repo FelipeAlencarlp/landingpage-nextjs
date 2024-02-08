@@ -14,7 +14,6 @@
     h1 {
         @include SizeLarge;
         font-weight: bold;
-        margin-bottom: 4rem;
     }
 
     p {
@@ -78,10 +77,10 @@
 
     h1 {
         @include SizeMedium;
-        padding: 18px 0px;
         font-weight: bold;
         width: auto;
         color: $purple2Color;
+        text-align: left
     }
 
     p {
@@ -92,6 +91,8 @@
     }
 
     @include Phone {
+        width: 100%;
+        height: 100%;
         padding: 20px;
     }
 }
